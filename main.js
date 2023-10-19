@@ -1012,15 +1012,11 @@ function ContactChanger() {
   }
 }
 
+document.onkeydown= function(e){
+return false;
 
 
-
-
-
-
-
-
-
+}
 
 
 // Swiper Js
