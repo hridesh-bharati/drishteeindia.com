@@ -3,14 +3,10 @@ html {
     scrollbar-width: none !important;
     scroll-behavior: smooth !important;
 }
-
-body::-webkit-scrollbar {
+ body::-webkit-scrollbar {
     display: none !important;
 }
-
-
-
-:root {
+ :root {
     --topNavBgColor: #00268f;
     /* --mainBgColor: #CFE2FF !important; */
     --mainBgcolor: #B2CBFF;
@@ -38,88 +34,74 @@ body::-webkit-scrollbar {
     --computerBgCard: linear-gradient(0deg, #3a4792c2, #232d6b97), url("pic/thumbnails/book.png") center;
     --BooksBgCard: linear-gradient(0deg, #3a4792c2, #232d6b97), url("pic/thumbnails/pc.jpg") center;
     --EstablishmentBgCard: linear-gradient(0deg, #3a4792c2, #232d6b97), url("pic/contactBg.png") center;
---hindiFont:font-family: 'Tiro Devanagari Hindi', serif;
+ 
 }
-
-#rightFeatureFinrst li {
+ #rightFeatureFinrst li {
     color: yellow !important;
 }
-
-/* Utility Classes */
+ /* Utility Classes */ 
+.hindiFont{
+font-family: 'Tiro Devanagari Hindi', serif;
+}
 .textColorOne {
     color: #ff4500;
 }
-
-.transparentTableData {
+ .transparentTableData {
     background: transparent !important;
 }
-
-.myshadow {
+ .myshadow {
     box-shadow: 0 2px 5px -1px rgba(50, 50, 93, .25), 0 1px 3px -1px rgba(0, 0, 0, .3);
 }
-
-.myshadow2 {
+ .myshadow2 {
     box-shadow: 2px 2px 8px #88888888;
 }
-
-.yellow-btn {
+ .yellow-btn {
     border-radius: 0 !important;
     padding: 0.8rem 1rem;
 }
-
-.yellow-btn:hover {
+ .yellow-btn:hover {
     background-color: rgb(5, 15, 107) !important;
     transform: translateY(-2px) !important;
     transition: all 0.2s linear;
 }
-
-.blink {
+ .blink {
     animation: amt 1s linear infinite;
 }
-
-@keyframes amt {
+ @keyframes amt {
     100% {
         color: maroon;
     }
 }
-
-.hoverTextBlue:hover {
+ .hoverTextBlue:hover {
     color: blue;
 }
-
-.hoverTextOrange:hover {
+ .hoverTextOrange:hover {
     color: orangered;
 }
-
-.hoverBtn:hover {
+ .hoverBtn:hover {
     background-color: rgb(72, 174, 3) !important;
     transform: translateY(-2px) !important;
     transition: all 0.2s linear;
 }
-
-.myFlex {
+ .myFlex {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     flex-direction: column !important;
 }
-
-.HeroMargin {
+ .HeroMargin {
     margin: 2rem 0;
 }
-
-.myPaddingMargin table td {
+ .myPaddingMargin table td {
     margin: 10px 2px !important;
     padding: 10px 2px !important;
 }
-
-/* Dark mode Changer */
+ /* Dark mode Changer */
 .changer-container .changer-btn {
     border: none !important;
     outline: none !important;
 }
-
-/* Toggle Sliders */
+ /* Toggle Sliders */
 .toggle {
     position: relative;
     display: inline-block;
@@ -129,14 +111,12 @@ body::-webkit-scrollbar {
     border: 1px solid gray;
     cursor: pointer !important;
 }
-
-.switchChild {
+ .switchChild {
     display: flex !important;
     align-items: center !important;
     justify-content: space-around !important;
 }
-
-.toggle:after {
+ .toggle:after {
     content: "";
     position: absolute;
     width: 30%;
@@ -147,172 +127,140 @@ body::-webkit-scrollbar {
     left: 5px;
     transition: all 0.5s;
 }
-
-.checkbox:checked+.toggle::after {
+ .checkbox:checked+.toggle::after {
     left: 60%;
 }
-
-.toggle {
+ .toggle {
     background-color: black;
     margin-left: 2rem;
 }
-
-.checkbox:checked+.toggle {
+ .checkbox:checked+.toggle {
     background-color: white;
 }
-
-/* ****************top Nav*********************** */
+ /* ****************top Nav*********************** */
 #TopMarqueeNav {
     height: 1.5rem;
 }
-
-.TopWelcomeNavLeft {
+ .TopWelcomeNavLeft {
     width: 10%;
 }
-
-.TopWelcomeCenter {
+ .TopWelcomeCenter {
     width: 50%;
 }
-
-.TopWelcomeNavRight {
+ .TopWelcomeNavRight {
     width: 40%;
     font-size: 0.9rem;
 }
-
-.nav-link2 {
+ .nav-link2 {
     text-decoration: none;
     display: inline-block;
     position: relative;
 }
-
-#logoImg {
+ #logoImg {
     width: 2.7rem;
 }
-
-/* Top Nav  */
+ /* Top Nav  */
 .TopWelcomeNavRight img {
     width: 0.8rem !important;
 }
-
-#TopNavBar {
+ #TopNavBar {
     margin: 1.5rem 0 0;
     background: 'var(--darkRed)';
     font-size: 0.9rem !important;
 }
-
-#TopNavBar a {
+ #TopNavBar a {
     color: white;
     text-shadow: 0px 1px #000;
 }
-
-#TopNavBar i {
+ #TopNavBar i {
     font-size: 1rem;
 }
 #studentZoneNav,
 #CourseListNav {
     background: var(--darkRed);
 }
-
-#studentZoneNav a,
+ #studentZoneNav a,
 #CourseListNav a {
     padding: 10px;
     color: white;
     font-size: 0.9rem;
 }
-
-#studentZoneNav a:hover,
+ #studentZoneNav a:hover,
 #CourseListNav a:hover {
     color: black !important;
     text-shadow: none !important;
 }
-
-.my-dropdown-toggle::before {
+ .my-dropdown-toggle::before {
     content: none !important;
 }
-
-@media screen and (min-width:768px) {
+ @media screen and (min-width:768px) {
     .dropdown:hover .dropdown-menu {
         display: block !important;
     }
 }
-
-/* Carousel Section  */
+ /* Carousel Section  */
 .MainCarousel {
     margin-top: 2.3rem;
 }
-
-/* Course section Start */
+ /* Course section Start */
 .cardBoxShadow {
     box-shadow: 0 2px 5px -1px rgba(50, 50, 93, .25), 0 1px 3px -1px rgba(0, 0, 0, .3);
 }
-
-#CourseContainer .card,
+ #CourseContainer .card,
 #CourseContainer img {
     border: none !important;
     border-radius: 2px !important;
 }
-
-#CourseContainer div {
+ #CourseContainer div {
     border: none !important;
     margin: 0;
     padding: 0;
 }
-
-#CourseContainer b {
+ #CourseContainer b {
     color: blue;
 }
-
-/* About Section  */
+ /* About Section  */
 #BookCard h1,
 #ComputerCard h1,
 #Establishment h1 {
     font-size: 4rem !important;
 }
-
-#aboutBgMain {
+ #aboutBgMain {
     color: black;
     font-weight: 500;
 }
-
-/* Gallary */
+ /* Gallary */
 .ZoomGallaryPic img {
     transition: all 0.5s;
     border-radius: 5px !important;
 }
-
-.ZoomGallaryPic img:hover {
+ .ZoomGallaryPic img:hover {
     transform: scale(1.03);
     z-index: 999;
 }
-
-.ZoomCard {
+ .ZoomCard {
     transition: all 0.5s;
     border-radius: 5px !important;
 }
-
-.ZoomCard:hover {
+ .ZoomCard:hover {
     transform: scale(1.03);
     z-index: 999;
 }
-
-/* Testimonial  */
+ /* Testimonial  */
 #carouselExampleInterval {
     background: url(pic/enquiryBg.png) no-repeat;
     background-size: cover;
 }
-
-/* Feature and Updates */
+ /* Feature and Updates */
 #liveCards .card {
     border: none !important;
     font-weight: normal !important;
 }
-
-.showFont {
+ .showFont {
     display: none;
     visibility: hidden;
 }
-
-/* Registation section */
+ /* Registation section */
 .rightCardBoys {
     position: fixed;
     right: -50px;
@@ -320,16 +268,14 @@ body::-webkit-scrollbar {
     transform: rotate(-40deg);
     font-size: 2rem;
 }
-
-/* .rightCardBoys::before {
+ /* .rightCardBoys::before {
     content: 'Hello';
     transform: rotate(0deg) !important;
     width: 100px;
     height: 100px;
     animation: amt 3s infinite;
 }
-
-@keyframes amt {
+ @keyframes amt {
     50% {
         color: green;
     }
@@ -337,22 +283,19 @@ body::-webkit-scrollbar {
         color: white;
     }
 } */
-
-#RegistrationContainer {
+ #RegistrationContainer {
     background: linear-gradient(rgba(0, 0, 0, 0.8),
             rgba(0, 0, 0, 0.8)), url(pic/contactBg.png),
         no-repeat center center;
     background-size: cover;
 }
-
-#Myform {
+ #Myform {
     background: var(--aboutBgColor);
     border: 2px solid rgba(266, 255, 255, 0.9) !important;
     backdrop-filter: blur(10px) !important;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.99) !important;
 }
-
-/* Course Marquee Slider  */
+ /* Course Marquee Slider  */
 #courseMarqueeSlide {
     width: 100vw !important;
     position: fixed !important;
@@ -363,18 +306,15 @@ body::-webkit-scrollbar {
     padding: 0 !important;
     margin: 0 !important;
 }
-
-#courseMarqueeSlide small {
+ #courseMarqueeSlide small {
     border-right: 1px dotted rgb(0, 0, 0);
     padding: 0 0.5rem !important;
 }
-
-/* Feature & Notish Board  */
+ /* Feature & Notish Board  */
 #FeaturesBackgroundColor1 {
     background: var(--mainBgcolor);
 }
-
-#openingHour,
+ #openingHour,
 #NotishBoard {
     border: none !important;
     box-shadow: 0 2px 2px #777;
@@ -383,51 +323,43 @@ body::-webkit-scrollbar {
     color: black;
     background-color: #fff;
 }
-
-/* ********Swiper ************* */
+ /* ********Swiper ************* */
 swiper-container {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
 }
-
-swiper-slide {
+ swiper-slide {
     background-position: center;
     background-size: cover;
     width: 300px;
     height: 300px;
 }
-
-swiper-slide img {
+ swiper-slide img {
     display: block;
     width: 100%;
 }
-
-/* swiper style  */
+ /* swiper style  */
 .swiper {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
 }
-
-.swiper-slide {
+ .swiper-slide {
     background-position: center;
     background-size: cover;
     width: 300px;
     height: 300px;
 }
-
-.swiper-slide2 img {
+ .swiper-slide2 img {
     display: block;
     width: 100%;
 }
-
-.swiper-container2 {
+ .swiper-container2 {
     width: 100%;
     height: 100%;
 }
-
-.swiper-slide2 {
+ .swiper-slide2 {
     text-align: center;
     font-size: 18px;
     background: #29ff34 !important;
@@ -444,15 +376,13 @@ swiper-slide img {
     -webkit-align-items: center;
     align-items: center;
 }
-
-.swiper-slide2 img {
+ .swiper-slide2 img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
-/* Start Team section  */
+ /* Start Team section  */
 .bg-team {
     background: linear-gradient(rgba(0, 0, 0, 0.8),
             rgba(14, 15, 16, 0.933)),
@@ -460,8 +390,7 @@ swiper-slide img {
     background-size: cover;
     background-position: center;
 }
-
-/* <<<<<<<<<<<<<<<<<<  Social Icons  >>>>>>>>>>>>> */
+ /* <<<<<<<<<<<<<<<<<<  Social Icons  >>>>>>>>>>>>> */
 .social-icons {
     position: fixed;
     left: 0;
@@ -472,22 +401,19 @@ swiper-slide img {
     color: #fff;
     transition: 0.3s linear;
 }
-
-.social-icons a {
+ .social-icons a {
     margin: 0.2rem 0;
     display: flex;
     align-items: center;
     transition: 0.3s linear;
     border-radius: 30px !important;
 }
-
-.social-icons a i {
+ .social-icons a i {
     padding: 0.2rem;
     border-radius: 0 2px 2px 0 !important;
     font-size: 1.7rem;
 }
-
-.social-icons .social-icons-one:hover,
+ .social-icons .social-icons-one:hover,
 .social-icons .social-icons-two:hover,
 .social-icons .social-icons-three:hover {
     cursor: pointer !important;
@@ -496,38 +422,31 @@ swiper-slide img {
     padding: 0 0 0 10%;
     display: flex;
 }
-
-.social-icons .my-fb,
+ .social-icons .my-fb,
 .social-icons .my-yt,
 .social-icons .my-wp {
     display: none;
 }
-
-.social-icons a:hover .my-fb,
+ .social-icons a:hover .my-fb,
 .social-icons a:hover .my-yt,
 .social-icons a:hover .my-wp {
     display: inline;
 }
-
-.social-icons .social-icons-one:hover {
+ .social-icons .social-icons-one:hover {
     background-color: #3d5af8;
 }
-
-.social-icons .social-icons-two:hover {
+ .social-icons .social-icons-two:hover {
     background-color: red;
 }
-
-.social-icons .social-icons-three:hover {
+ .social-icons .social-icons-three:hover {
     background-color: green;
 }
-
-.social-icons .social- #MyFooterColor .HoverIcons i {
+ .social-icons .social- #MyFooterColor .HoverIcons i {
     box-shadow: 2px 2px 0 0 rgba(0, 0, 0, .5) !important;
     border-color: rgba(0, 0, 0, .2);
     border-radius: 2px;
 }
-
-/*Start  Back to top  */
+ /*Start  Back to top  */
 #btn-back-to-top {
     position: fixed;
     bottom: 4rem;
@@ -535,8 +454,7 @@ swiper-slide img {
     display: none;
     z-index: 999;
 }
-
-#btn-back-to-top::after {
+ #btn-back-to-top::after {
     content: '';
     border-radius: 100%;
     border: 6px solid #00FFCB;
@@ -546,39 +464,33 @@ swiper-slide img {
     transform: translate(-50%, -50%);
     animation: ring 1.5s infinite;
 }
-
-.my-toast {
+ .my-toast {
     width: 14rem !important;
     position: fixed !important;
     bottom: 20% !important;
     z-index: 999999;
 }
-
-.show-toast {
+ .show-toast {
     display: none !important;
 }
-
-@keyframes ring {
+ @keyframes ring {
     0% {
         width: 30px;
         height: 30px;
         opacity: 1;
     }
-
-    100% {
+     100% {
         width: 100px;
         height: 100px;
         opacity: 0;
     }
 }
-
-/* Thuumblain  */
+ /* Thuumblain  */
 #thumblain {
     height: 100px !important;
     background: #00062B;
 }
-
-#thumblain swiper-slide {
+ #thumblain swiper-slide {
     display: flex;
     align-items: start;
     justify-content: center;
@@ -586,106 +498,88 @@ swiper-slide img {
     width: auto !important;
     margin: 1rem !important;
 }
-
-#thumblain swiper-slide .card .card-body {
+ #thumblain swiper-slide .card .card-body {
     margin: 0;
     padding: 0;
     width: 120px;
 }
-
-#thumblain swiper-slide .card .card-body img {
+ #thumblain swiper-slide .card .card-body img {
     border: 2px solid white;
     border-radius: 10px;
 }
-
-/* footer  */
+ /* footer  */
 footer {
     margin-bottom: 1.5rem;
     font-weight: normal;
 }
-
-footer b {
+ footer b {
     color: orange !important;
 }
-
-footer i {
+ footer i {
     font-style: normal !important;
     font-weight: normal !important;
 }
-
-footer img {
+ footer img {
     width: 1.2rem;
 }
-
-footer td,
+ footer td,
 footer li {
     border: none !important;
     background: transparent !important;
     color: white !important;
     font-size: 0.9rem;
 }
-
-.mytable .ms-1:hover,
+ .mytable .ms-1:hover,
 .mytable #address1:hover,
 .mytable #address2:hover {
     color: rgba(255, 255, 255, 0.802) !important;
 }
-
-/* Admission  */
+ /* Admission  */
 .mainRegContainer label {
     font-weight: bold;
 }
-
-.validCheck:valid+.icon::after {
+ .validCheck:valid+.icon::after {
     font-size: 1.5rem;
     content: '😍';
 }
-
-.validCheck:invalid+.icon::after {
+ .validCheck:invalid+.icon::after {
     font-size: 1.5rem;
     content: '😳' !important;
 }
-
-form span,
+ form span,
 ::placeholder {
     color: #555 !important;
     font-size: 0.8rem;
 }
-
-.mainRegContainer i {
+ .mainRegContainer i {
     border-radius: 10px 0 0 10px;
     border: 1px solid gray;
     border-right: none;
     color: maroon;
     font-weight: bolder !important;
 }
-
-.mainRegContainer input {
+ .mainRegContainer input {
     border-radius: 0 10px 10px 0;
     border: 1px solid gray;
     border-left: none;
 }
-
-.mainRegContainer select {
+ .mainRegContainer select {
     border-radius: 0 10px 10px 0 !important;
     border: 1px solid gray;
     border-left: none;
 }
-
-/* Diploma Course */
+ /* Diploma Course */
 #course {
     background: var(--bg-color4);
 }
-
-#VerificationHeader {
+ #VerificationHeader {
     position: absolute;
     left: 50%;
     top: 5.3rem;
     transform: translate(-50%, -50%);
     z-index: 99;
 }
-
-#myDiplomaHeader {
+ #myDiplomaHeader {
     box-shadow: 2px 2px 8px #888888 !important;
     position: fixed;
     left: 50%;
@@ -693,74 +587,58 @@ form span,
     transform: translate(-50%, -50%);
     z-index: 99;
 }
-
-#diplomaBody .TopWelcomeNavLeft {
+ #diplomaBody .TopWelcomeNavLeft {
     width: 5rem;
 }
-
-#diplomaBody {
+ #diplomaBody {
     background: var(--body-color);
 }
-
-#mainContainer {
+ #mainContainer {
     color: white !important;
     font-size: 1.2rem;
     box-shadow: 2px 2px 8px #888888;
     margin-top: 1rem;
     /* background: white; */
 }
-
-.diplomaTable table th {
+ .diplomaTable table th {
     color: white;
     background: url(pic/line.gif);
     background-repeat: repeat-x;
 }
-
-.diplomaTable {
+ .diplomaTable {
     font-size: 1rem;
 }
-
-.diplomaTable .my-row-color {
+ .diplomaTable .my-row-color {
     font-size: 0.8rem;
 }
-
-.headText {
+ .headText {
     font-size: 1.4rem;
     text-align: center;
 }
-
-/* Language Section  */
+ /* Language Section  */
 #LanguageContainer table th {
     background: url(pic/line.gif);
     color: white;
 }
-
-/* Doeacc Course  */
-
-#DoeaccCourse td:hover {
+ /* Doeacc Course  */
+ #DoeaccCourse td:hover {
     color: orangered !important;
 }
-
-#DoeaccLeftCourse {
+ #DoeaccLeftCourse {
     height:650px;
     overflow-y: scroll !important;
 }
-
-#MainLanguageSection table td,
+ #MainLanguageSection table td,
 .DoeaccCourseContainer .diplomaTable table td {
     padding: 0.5rem 1rem !important;
 }
-
-#DoeaccCourse span {
+ #DoeaccCourse span {
     font-size: 0.8rem;
 }
-
-.DoeaccCourseLeftTable th {
-
-    color: var(--orangeTextColor);
+ .DoeaccCourseLeftTable th {
+     color: var(--orangeTextColor);
 }
-
-.DoeaccCourseLeftTable span {
+ .DoeaccCourseLeftTable span {
     color: var(--orangeTextColor);
 }
 /* Wev developmet course  */
