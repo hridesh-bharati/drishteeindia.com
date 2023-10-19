@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> About | DIIT </title>
+    <link rel="icon" type="image/png" href="pic/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css   ">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQuery.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body onload="listen()" style="background: #E8EAED ;" id="AboutBackground">
+    <!-- <body onload="listen()" style="background: #ececec;"> -->
+    <input type="text" id="TextToSpeech" class="hiddenVoice" value="Welcome to drishtee Computer center">
+    <div class="d-flex  align-items-center justify-content-between fixed-top"
+        style="background: var(--topNavBgColor); width: 100vw !important; font-size: 0.7rem;" id="TopMarqueeNav">
+        <div class="changer-container  d-flex  align-items-center justify-content-center TopWelcomeNavLeft  ">
+            <button class="changer-btn" style="background: transparent !important;">
+                <input type="checkbox" id="switch" class="checkbox d-none w-50 " onclick="aboutBgChanger()" />
+                <label for="switch" class="toggle">
+                    <p class="m-0 p-0 switchChild">
+                        <i class="bi bi-sun-fill " style="color: orangered;" title="Light Mode"></i>
+                        <i class="bi bi-moon-stars-fill text-white " title="Night Mode"></i>
+                    </p>
+                </label>
+            </button>
+        </div>
+        <div class="TopWelcomeCenter d-flex align-items-center">
+            <marquee scrollamount="8" width="100%">
+                <b class="text-light text-uppercase"> Welcome to DRISHTEE COMPUTER CENTER
+                </b>
+            </marquee>
+        </div>
+        <div class="ms-auto d-flex align-items-center justify-content-end TopWelcomeNavRight ">
+            <a class="nav-link active text-white " id="myH2" aria-current="page" href="tel:+919918151032"
+                title="Call-now">
+                <img src="pic/icon/call1.gif">+919918151032
+                &nbsp;&nbsp;</a>
+            <a class="nav-link  text-white " id="myH3" aria-current="page" href="#" title="E:Mail-Us">
+                <img src="pic/icon/mail.png">
+                ajtiwaridrishteeindia@gmail.com
+                &nbsp;&nbsp;</a>
+        </div>
+    </div>
+    <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>Nav Bar>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+    <nav class="navbar navbar-expand-lg fixed-top py-0" style="background: var(--darkRed);" id="TopNavBar">
+        <div class="container-fluid fw-medium text-uppercase ">
+           <img src="pic/logo.png" alt="DIIT" title="DRISHTEE Computer center" id="logoImg">
+           <button class="navbar-toggler border border-white " data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="bi bi-list text-white "></span>
+           </button>
+           <div class="collapse navbar-collapse " id="navbarNav">
+              <ul class="navbar-nav m-auto text-center d-flex justify-content-evenly align-items-center w-100 
+          text-danger ">
+                 <li class=" nav-item ">
+                    <a class=" nav-link active" aria-current="page" href="index.html">
+                       <i class="fa fa-home"></i>
+                       Home</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" id="top-blue" href="about.html">
+                       <i class="fa fa-address-card"></i>
+                       About</a>
+                 </li>
+                 <li class="nav-item dropdown my-dropdown-toggle  text-white" aria-expanded="false">
+                    <a class="nav-link   dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false"> <i class="fa fa-book"></i> Course </a>
+                    <ul class="dropdown-menu rounded rounded-0  " id="CourseListNav">
+                       <table>
+                          <tr>
+                             <td><a class="dropdown-item px-2 " href="diploma.html">Computer Diploma</a> </td>
+                          </tr>
+                          <tr>
+                             <td><a class="dropdown-item px-2 " href="language.html">Computer Language</a></td>
+                          </tr>
+                          <tr>
+                             <td><a class="dropdown-item px-2 " href="graphicsDesign.html">Graphics Design</a> </td>
+                          </tr>
+                          <tr>
+                             <td><a class="dropdown-item px-2 " href="webDevlopment.html">Web Development</a> </td>
+                          </tr>
+                          <tr>
+                             <td><a class="dropdown-item px-2 " href="Repairing.html">Computer Repairing</a> </td>
+                          </tr>
+                          <tr>
+                             <td><a class="dropdown-item px-2 " href="govCource.html">NIELIT/DEEOACC Courses</a></td>
+                          </tr>
+                       </table>
+                    </ul>
+                 <li class="nav-item"> <a class="nav-link   " id="top-blue" href="branch.html"> <i
+                          class="	fa fa-anchor"></i> Branch</a> </li>
+                 </li>
+                 <li class="nav-item dropdown text-white "> <a class="nav-link  dropdown-toggle " href="#" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false"> <i class='fa fa-mortar-board d '></i> Student-zone
+                    </a>
+                    <ul class="dropdown-menu p-0 m-0" id="studentZoneNav">
+                       <table>
+                          <tr>
+                             <td>
+                                <a class="dropdown-item p-2 " href="admission.html">New
+                                   Admission</a>
+                             </td>
+                          </tr>
+                          <tr>
+                             <td>
+                                <a class="dropdown-item p-2 " href="verificaion.html">Verify
+                                   Your
+                                   Certificate</a>
+                             </td>
+                          </tr>
+                          
+                       </table>
+                    </ul>
+                 </li>
+  
+                 <li class="nav-item ">
+                    <a class="nav-link  " href="contact.html">
+                       <i class="fa fa-phone"></i>
+                       Contact</a>
+                 </li>
+              </ul>
+           </div>
+        </div>
+     </nav>
+    <!--start About Container  -->
+    <!-- <div class="container-fluid  px-0 mx-0" style=" margin-top: 2.3rem !important;">
+        <div class="row mx-0">
+            <div class="col-12  d-flex justify-content-center flex-column align-items-center vvv"
+                style="background: var(--bg-with-pic-contact); height: 25vh;">
+                <span class=" w-100 d-block  text-center ">
+                    <div data-aos="fade-down">
+                        <h1 class=" fw-bolder text-warning" style="text-shadow: 5px 5px 5px black;">
+                            About
+                        </h1>
+                    </div>
+                </span>
+                <div data-aos="fade-up">
+                    <h5 class="text-primary d-flex mb-4 pb-4">
+                        <a href="index.html" class="nav-link"><i class="fa fa-home text-primary"></i> HOME </a>
+                        &nbsp; <span class="text-light">/ About</span>
+                    </h5>
+                </div>
+            </div>
+        </div> -->
+
+    <!--End About Container  -->
+
+    <!--  features Marquee -->
+    <div style="border-radius: 0 !important;">
+        <div class="card-footer d-flex align-items-center justify-content-center p-1 "
+            style="background: var(--lightBlack);">
+            <marquee class="text-white fw-medium " direction="left" onmouseover="this.stop();"
+                onmouseout="this.start();"> ISO 9001 : 2008 द्वारा प्रमाणित &amp; भारत सरकार द्वारा पंजीकृत संस्था
+                || DOEACC द्वारा पंजीकृत संस्था हर कोर्स पूरा करने पर फ्री प्रमाणपत्र || योग्य एवं अनुभवी
+                प्रशिक्षकों द्वारा प्रशिक्षण || प्रमाण पत्र को इंटरनेट से जानने योग्य सुविधा, इत्यादी........
+            </marquee>
+        </div>
+        <div class="row m-0 p-0 myshadow" style="background: white;" id="aboutMain">
+            <div class="col-12 py-4 ">
+                <div class="row">
+                    <div class="col-md-6 pb-2 " data-aos="zoom-in" data-aos-duration="700"> <img src="pic/main-bg.jpg"
+                            class="w-100 p-0 m-0 border border-0 img-thumbnail"> </div>
+                    <div class="col-md-6 " d="AboutColorMain" data-aos="zoom-in" data-aos-duration="700">
+                        <h3 class="card-title  fw-medium pt-3 " style="color: red;"> Drishtee Institute Information
+                            Of Technology </h3> <small class="fw-bolder " style="color: green;"> A Complete I.T.
+                            Institute. </small>
+                        <p class="card-text p-4" data-aos="zoom-in" data-aos-duration="900"> <span
+                                class=" text-danger">Drishtee Institute Of Information Technology </span> In
+                            Nichlaul Is One Of The Leading Businesses In The Computer I.T Training Institutes. Also
+                            Known For Computer Training Institutes,Computer Training Institutes For <span
+                                class="text-success fw-medium "> CCC, PGDCA, C Programming, C++, Python , HTML, CSS,
+                                Bootstrap, JavaScript, W3-CSS, SASS, JQuery, PHP, VB.NET, Hardware Networking,
+                                Software Development, web Development </span> and Much More. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-group m-0 p-0 my-4 ">
+            <div class="card border-0 rounded-0 mx-4 myshadow ">
+                <div class="card-body m-0 p-0" data-aos="fade-down" data-aos-duration="300" id="MissionLeft">
+                    <ol class="list-group border-0  list-group-numbered ">
+                        <li class="list-group-item border-0 d-flex justify-content-between align-items-start"
+                            id="MissionLeftChildA">
+                            <div class=" me-auto">
+                                <div class="fw-bold text-primary "> Our Vision</div>
+                                <p class="m-0 p-0"> Our vision is to
+                                    improve the youth of
+                                    rural India, by giving them
+                                    high class training atmosphere at very affordable cost.
+
+                                    We work on the philosophy of “SHINING INDIA”, which can be
+                                    achieved by developing only rural India.
+
+                                    We are committed to impart quality computer education
+                                    among the students.</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item border-0 d-flex justify-content-between align-items-start"
+                            id="MissionLeftChildB">
+                            <div class="me-auto">
+                                <div class="fw-bold  text-primary"> Our Mission</div>
+                                <p class="m-0 p-0"> DIIT are committed
+                                    to impart
+                                    Professional education by
+                                    inculcating three basic values
+                                    among the youth-----
+                                    “Building National Character,
+                                    quality education and developing
+                                    Management Skills”. </p>
+                                <span class="text-danger"> We believe in doing & learning .</span>
+                            </div>
+                        </li>
+
+                    </ol>
+                </div>
+            </div>
+            <div class="card border-0 mx-4 rounded-0 myshadow">
+                <div class="card-body " id="MissionRight">
+                    <h5 class="card-title text-primary "> THE REASONS ARE HERE………………………….</h5>
+                    <p class="m-0 p-0" data-aos="fade-down">
+                        An ISO 9001:2008 Certified institute by BSI.
+                        Online examination facility and quick result.
+                        Training on Live project.
+                        High class technology.
+                        Hi-tech lab.
+                        Govt. recognize institute.
+                        Affordable fees.
+                        Free bags, books, and I-cards to each admission.
+                        Monthly test facility, to understand the grasping power of students.
+                        Tie- ups with Global companies.
+                        Microsoft certified courses and study materials.
+                        Conducted by well experienced I.T. professionals.
+                        100 % job oriented Courses.
+                        Free English speaking and personality development class.
+                        Classes by well experienced and qualified trainers.
+                        …………………………. & many more reasons to Join Drishtee.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- mission  -->
+    <div class="row p-0 m-0">
+        <div class="col-md-8 m-0 p-0 ">
+            <div class="card m-2">
+                <div class="accordion bg-white myshadow " id="accordionExample">
+                    <div class="accordion-item  ">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button rounded rounded-0 bg-primary" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                aria-controls="collapseOne">
+                                <!-- Our Aim -->
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show "
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body" id="leftAccordionOne">
+                                We will provide high and quality education for all very nominal fees to maximize the
+                                value of our
+                                students, as well as the community we serve in the progress and development of the
+                                nation.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item transparentTableData ">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <!-- Our Mission 2 -->
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body" id="leftAccordionTwo">
+                                To be leader in the development of I.T. oriented Quality education and Training and
+                                be the Country’s
+                                premier organization for examination and certification in the field of IT. </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item transparentTableData">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <!-- Our Mission 2 -->
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body" id="leftAccordionThree">
+                                All the training programs are designed and developed by the team of experts as per
+                                the industry input.
+                                It is our utmost satisfaction when our student is placed in various companies and
+                                firms on completion
+                                of his/her. </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item transparentTableData  ">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                <!-- Our Mission 2 -->
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body" id="leftAccordionFour">
+                                Our vision is to improve the youth of rural India, by giving them high class
+                                training atmosphere at
+                                very affordable cost. We work on the philosophy of “SHINING INDIA”, which can be
+                                achieved by
+                                developing only rural India. We are committed to impart quality computer education
+                                among the students.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 m-0 p-0">
+            <div class="card  m-2 myshadow  rounded rounded-0 " id="rightInfoParent">
+                <div class="card-body p-0 m-0">
+                    <div class="card-header fs-4" style="background: var(--d-blue);">
+                        <div class="fw-bold text-white" data-aos="fade-right"> <i
+                                class="bi bi-card-list  fst-normal text-uppercase text-warning"> </i>
+                            Basic Information :</div>
+                    </div>
+                </div>
+                <ul class="list-group list-group-flush text-start  basicStuctureShadow">
+                    <li class="list-group-item transparentTableData " id="rightInfoParentFirstChild"
+                        data-aos="fade-right">
+                        <img src="pic/icon/homeTwo.png" width="20px" alt="">
+                        Address:
+                        <strong>Paragpur Road near Ramharsh inter collage </strong>
+                    </li>
+                    <li class="list-group-item transparentTableData" id="rightInfoParentSecondChild"
+                        data-aos="fade-right">
+                        <i class="bi bi-map-fill text-success"></i>
+                        City:
+                        <strong>Nichlaul</strong>
+                    </li>
+                    <li class="list-group-item transparentTableData" id="rightInfoParentThirdChild"
+                        data-aos="fade-right">
+                        <i class="bi bi-globe-central-south-asia text-success"> </i>
+                        District:
+                        <strong>Maharajganj</strong>
+                    </li>
+                    <li class="list-group-item transparentTableData" id="rightInfoParentFourChild"
+                        data-aos="fade-right">
+                        <i class="bi bi-pin-map-fill text-danger"></i>
+                        State:
+                        <strong>Uttar
+                            Pradesh</strong>
+                    </li>
+                    <li class="list-group-item transparentTableData" id="rightInfoParentFiveChild"
+                        data-aos="fade-right">
+                        <i class="fa fa-book text-primary "></i>
+                        Library:
+                        <strong>
+                            Yes</strong>
+                    </li>
+                    <li class="list-group-item transparentTableData" id="rightInfoParentSixChild" data-aos="fade-right">
+                        <i class="bi bi-bank2 fw-bold text-success"></i>
+                        Establishment(in year):
+                        <strong>
+                            20+</strong>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start  Certificate Section -->
+    <div class="container-fluid my-4 py-4">
+        <div class="row  m-auto ">
+            <span class="w-100 text-center ">
+                <h2 style="color: red;">Our Affiliations</h2>
+                <p class="pb-0 mb-0" style="color: orangered;">Drishtee is registered under the following
+                    organization.</p>
+            </span>
+            <div class="row row-cols-1 row-cols-md-4 pt-0 mt-0 row-cols-sm-1  g-2">
+                <div class="col">
+                    <div class="card p-0 m-0 myshadow" id="certificateOne">
+                        <img src="pic/thumbnails/Certificate1.png" data-aos="fade-up" data-aos-duration="400"
+                            class="card-img-top">
+                        <div class="card-body p-0 p-2  m-0 ">
+                            <p class="card-text  ">
+                            <div data-aos="fade-right" data-aos-duration="400"> <small>Registered under the society
+                                    Act ,21, 1860,
+                                    Government Of India having registration number 72/2013-2014.</small> </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card p-0 m-0 myshadow " id="certificateTwo">
+                        <img src="pic/thumbnails/Certificate3.png" data-aos="fade-up" data-aos-duration="600"
+                            class="card-img-top" alt="...">
+                        <div class="card-body p-0  p-2  m-0 ">
+                            <p class="card-text  ">
+                            <div data-aos="fade-right" data-aos-duration="700"> <small>Certified by BSI, as an ISO
+                                    9001:2008
+                                    certified
+                                    institute, for International
+                                    standard,
+                                    quality training, having Certificate number MSYS/0485/15.</small> </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card p-0 m-0  myshadow" id="certificateThree">
+                        <img src="pic/thumbnails/Certificate2.png" data-aos="fade-up" data-aos-duration="800"
+                            class="card-img-top" alt="...">
+                        <div class="card-body p-0 p-2 m-0 ">
+                            <p class="card-text  ">
+                            <div data-aos="fade-right" data-aos-duration="1000"><small> Registered with NIELIT(
+                                    Formerly DOEACC)
+                                    Government
+                                    Of
+                                    India, as a
+                                    facilitation
+                                    centre
+                                    for CCC & O level. Having accreditation number 88001055. </small></div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card p-0 m-0 myshadow" id="certificateFour">
+                        <img src="pic/thumbnails/Certificate4.png" data-aos="fade-up" data-aos-duration="1200"
+                            class="card-img-top" alt="...">
+                        <div class="card-body p-0 p-2 m-0 ">
+                            <p class="card-text  ">
+                            <div data-aos="fade-right" data-aos-duration="1300"> <small>Registered with Algol
+                                    Universal Trust, as an
+                                    associate
+                                    of KSOU(Karnataka state
+                                    open
+                                    university), for University level courses such as, BCA,BSC,MCA,MSC, etc, having
+                                    reg. No. -
+                                    KSOU/AUT/980-A</small> </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Book Computer card  -->
+    <div class="card-group my-4 text-center rounded-0 ">
+        <div class="card myshadow  rounded rounded-0 mx-2" id="BookCard" data-aos="fade-up" data-aos-duration="200">
+            <div class="card-body ">
+                <h1 class="  w-75 m-auto mt-1 py-5 fw-bolder  text-white counter" style="background: var(--computerBgCard);"> <b>200</b></h1>
+                <h5 class="card-title">Books in Library</h5>
+            </div>
+        </div>
+        <div class="card myshadow rounded rounded-0 mx-2" id="ComputerCard" data-aos="fade-up" data-aos-duration="500">
+            <div class="card-body  ">
+                <h1 class=" w-75 m-auto mt-1 py-5 fw-bolder  text-white counter"  style="background: var(--BooksBgCard);"> <b>20</b></h1>
+                <h5 class="card-title">Computers</h5>
+            </div>
+        </div>
+        <div class="card myshadow rounded rounded-0 mx-2" id="Establishment" data-aos="fade-up" data-aos-duration="700">
+            <div class="card-body  ">
+                <h1 class="w-75 m-auto mt-1 py-5 fw-bolder text-white counter"  style="background: var(--EstablishmentBgCard);"> <b>20</b></h1>
+                <h5 class="card-title">Establishment(in year): 20+</h5>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- social icons -->
+    <div class="social-icons">
+        <a class="nav-link  social-icons-one" href="#" data-aos="fade-right" data-aos-duration="200">
+            <small class="my-fb">Facebook</small>
+            <i class="bi bi-facebook px-1  " style="background: #3d5af8;"></i>
+        </a>
+        <a class="nav-link social-icons-two " href="#" data-aos="fade-right" data-aos-duration="400">
+            <small class="my-yt">Youtube</small>
+            <i class="bi bi-youtube px-1 " style="background: red;"></i>
+        </a>
+        <a class="nav-link  social-icons-three" href="https://wa.me/+919918151032" data-aos="fade-right"
+            data-aos-duration="600">
+            <small class="my-wp">Whatsapp</small>
+            <i class="bi bi-whatsapp px-1 " style="background: green;"></i>
+        </a>
+    </div>
+    <div class="row" id="courseMarqueeSlide">
+        <div class="col-12">
+            <div class="row bg-warning">
+                <div class="col-md-2 m-0 p-0 text-dark d-flex align-items-center justify-content-center fw-bold">
+                    <div>
+                        All
+                        Updated
+                        Course
+                    </div>
+                    <img src="pic/icon/newGif.gif" style="width:50px;" alt="">
+                </div>
+                <div class="col-md-10 text-white  fw-medium         d-flex align-items-center justify-content-center text-uppercase"
+                    style="background: var(--cardHeadColor);">
+                    <marquee> <small> adca+ </small> <small> dca </small> <small> dcaa </small> <small> dbi </small>
+                        <small> 'o' level </small> <small> P.G. DCA </small> <small> cca </small> <small> cac
+                        </small>
+                        <small> ccc </small> <small> chn </small> <small> ddtp </small> <small> dbi </small> <small>
+                            C
+                            Language </small> <small> C++ </small> <small> Python (G.U.I.) </small> <small> Html 5
+                        </small> <small> css 3 </small> <small> SASS</small> <small> SCSS </small> <small> Bootstrap
+                        </small> <small> JavaScript </small> <small> Computer Repairing </small> <small> Microsoft
+                            Office </small> <small> Internet( i. O. t. ) + cyber security with A.I. </small> <small>
+                            TALLY WITH INVENTORY TAXATION WITH GST </small> <small> PHOTOSHOP </small> <small>
+                            PAGEMAKER
+                        </small> <small> COREL-DRAW </small> <small>Etc...</small>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer class="text-white pt-3 text-lg-start border border-white " id="AboutFooter"
+        style="background: var(--cardHeadColorDark); ">
+        <div class="container-fluid border-bottom ">
+            <div class="row ">
+               <!--Grid column-->
+               <div class="col-md-4 mb-4 mb-md-0 m-sm-0 p-0 ">
+                  <b data-aos="fade-down" class="ms-1 " style="color:orange !important;">
+                     <i class="fa fa-home text-white"></i>
+                     ADDRESS
+                  </b>
+                  <hr class="m-0 p-0">
+                  <table class="table mytable table-striped-columns mt-1">
+                     <tbody class="font-weight-normal">
+                        <tr>
+                           <td data-aos="fade-right" data-aos-duration="100">
+                              <i class="bi bi-geo-alt-fill text-danger"></i><span id="address1">Paragpur raod Near Ramharsh
+                                 Inter
+                                 Collage Nichlaul.</span>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td data-aos="fade-right" data-aos-duration="100">
+                              <i class="bi bi-geo-alt-fill text-danger"></i><span id="address2">Main market Road in front
+                                 of
+                                 Rauniyar
+                                 chitra mandir Thoothibari.</span>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td data-aos="fade-right" data-aos-duration="200">
+                              <img src="pic/icon/call1.gif" alt=""><span class="ms-1" title="Mr. Ajay Tiwari">+91
+                                 9918151032</span>
+                              &nbsp;
+                              <img src="pic/icon/call1.gif" alt=""><span class="ms-1" title="Santosh Singh Chauhan">+91
+                                 7398889347</span>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td data-aos="fade-right" data-aos-duration="300">
+                              <img src="pic/icon/call1.gif" alt=""><span class="ms-1" title="Manjesh Vishwakarma">+91
+                                 9621444858</span>
+                              &nbsp;
+                              <img src="pic/icon/call1.gif" alt=""><span class="ms-1" title="Hridesh Bharati">+91
+                                 7267995307</span>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class="col-md-4 mb-4 mb-md-0 m-sm-0 ">
+                  <b data-aos="fade-down" style="color:orange !important;">
+                     <i class="fa fa-tags text-white">
+                     </i>
+                     QUICK
+                     LINKS
+                  </b>
+                  <hr class="m-0 p-0">
+                  <table class="table text-white table-striped-columns mt-1 footer-table">
+                     <tbody class="font-weight-normal">
+                        <tr>
+                           <td> <a class="nav-link icon-link icon-link-hover" href="index.html" data-aos="fade-right"
+                                 data-aos-duration="100"><i class="bi bi-arrow-right-short d-flex align-items-center"></i>
+                                 Home</a>
+                           </td>
+                           <td> <a class="nav-link icon-link icon-link-hover" href="branch.html" data-aos="fade-right"
+                                 data-aos-duration="100"><i class="bi bi-arrow-right-short d-flex align-items-center"></i>
+                                 Branch</a>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td> <a class="nav-link icon-link icon-link-hover" href="govCource.html"
+                                 data-aos="fade-right" data-aos-duration="100"><i
+                                    class="bi bi-arrow-right-short d-flex align-items-center"></i> DOEACC Course</a> </td>
+                           <td> <a class="nav-link icon-link icon-link-hover" href="diploma.html" data-aos="fade-right"
+                                 data-aos-duration="100"><i class="bi bi-arrow-right-short d-flex align-items-center"></i>
+                                 Diploma Courses</a> </td>
+                        </tr>
+                        <tr>
+                           <td> <a class="nav-link icon-link icon-link-hover" href="verificaion.html" 
+                                 data-aos="fade-right" data-aos-duration="100"><i
+                                    class="bi bi-arrow-right-short d-flex align-items-center"></i> Certificate Verification
+                              </a> </td>
+                           <td> <a class="nav-link icon-link icon-link-hover" href="admission.html" data-aos="fade-right"
+                                 data-aos-duration="100"><i class="bi bi-arrow-right-short d-flex align-items-center"></i>
+                                 New
+                                 Admission</a> </td>
+                        </tr>
+                        <tr>
+                           <td> <a class="nav-link icon-link icon-link-hover" href="contact.html"
+                                 data-aos="fade-right" data-aos-duration="100"><i
+                                    class="bi bi-arrow-right-short d-flex align-items-center"></i> Enquire </a> </td>
+                           <td> <a class="nav-link icon-link icon-link-hover" href="discription.html" data-aos="fade-right"
+                                 data-aos-duration="100"><i class="bi bi-arrow-right-short d-flex align-items-center"></i>
+                                 Term & Conditions </a> </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class="col-md-4 mb-4 mb-md-0 " id="cssss">
+                  <b data-aos="fade-down" style="color:orange !important;"><i class="bi bi-newspaper text-white"></i>
+                     NEWS
+                     &
+                     UPDATES
+                  </b>
+                  <hr class="m-0 p-0">
+                  <table class="table text-white table-striped-columns mt-1 footer-table mytable">
+                     <tbody class="font-weight-normal">
+                        <tr>
+                           <td data-aos="fade-right" data-aos-duration="300"> O level only 14999 Rs. </td>
+                           <td data-aos="fade-right" data-aos-duration="300"> CCC free on ADCA </td>
+                        </tr>
+                        <tr>
+                           <td data-aos="fade-right" data-aos-duration="300"> Assignments on every module. </td>
+                           <td data-aos="fade-right" data-aos-duration="300"> Projects based Class </td>
+                        </tr>
+                        <tr>
+                           <td data-aos="fade-right" data-aos-duration="300" class="d-flex justify-content-evenly">
+                              <a href="#" class="nav-link text-success border-primary ">
+                                 <i class="bi bi-whatsapp fs-4 text-white px-2 py-1"
+                                    style="background: green; border-radius:5px;"></i>
+                              </a>
+                              <a href="#" class="nav-link text-success border-primary ">
+                                 <i class="bi bi-youtube fs-4 text-white px-2 py-1"
+                                    style="background: red; border-radius:5px;"></i>
+                              </a>
+                           </td>
+                           <td data-aos="fade-right" data-aos-duration="300">
+                              <a href="#" class="nav-link text-success border-primary ">
+                                 <i class="bi bi-facebook fs-4 text-white px-2 py-1"
+                                    style="background: #3d5af8;  border-radius:5px;"></i>
+                              </a>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+        <!-- Copyright Section -->
+        <div class="text-center p-3 " style="background-color: rgba(0, 0, 0, 0.2);" id="lastFooter"> &copy; 2024
+            DIIT All
+            Rights Reserved | Developed By : <strong class="text-warning">DIIT</strong>
+            Student
+        </div>
+    </footer>
+    <!-- Back to top button -->
+    <button type="button" class="btn btn-primary yellow-btn btn-floating "
+        style="font-size: 1.5rem; border-radius: 8px !important;" id="btn-back-to-top"> <i
+            class="bi bi-arrow-up-circle-fill"></i> </button>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script>$('.counter').counterUp({ delay: 3, time: 2000 });</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+
+
+</html>

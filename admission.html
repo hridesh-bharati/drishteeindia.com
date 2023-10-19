@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Admission | DIIT </title>
+	<link rel="icon" type="image/png" href="pic/logo.png">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="mediaQuery.css">
+	<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+	<script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+</head>
+
+<body style="background:#B2CBFF;" id="AdmBodyColor">
+	<input type="text" id="TextToSpeech" class="hiddenVoice  " value="Welcome to drishtee Computer center">
+	<div class="d-flex  align-items-center justify-content-between fixed-top"
+		style="background: var(--topNavBgColor); width: 100vw !important; font-size: 0.7rem;" id="TopMarqueeNav">
+		<div class="changer-container  d-flex  align-items-center justify-content-center TopWelcomeNavLeft  ">
+			<button class="changer-btn" style="background: transparent !important;">
+				<input type="checkbox" id="switch" class="checkbox d-none w-50 " onclick="AdmChange()" />
+				<label for="switch" class="toggle">
+					<p class="m-0 p-0 switchChild">
+						<i class="bi bi-sun-fill " style="color: orangered;" title="Light Mode"></i>
+						<i class="bi bi-moon-stars-fill text-white " title="Night Mode"></i>
+					</p>
+				</label>
+			</button>
+		</div>
+		<div class="TopWelcomeCenter d-flex align-items-center">
+			<marquee scrollamount="8" width="100%">
+				<b class="text-light text-uppercase"> Welcome to DRISHTEE COMPUTER CENTER
+				</b>
+			</marquee>
+		</div>
+		<div class="ms-auto d-flex align-items-center justify-content-end TopWelcomeNavRight ">
+			<a class="nav-link active text-white " id="myH2" aria-current="page" href="tel:+919918151032"
+				title="Call-now">
+				<img src="pic/icon/call1.gif">+919918151032
+				&nbsp;&nbsp;</a>
+			<a class="nav-link  text-white " id="myH3" aria-current="page" href="#" title="E:Mail-Us">
+				<img src="pic/icon/mail.png">
+				ajtiwaridrishteeindia@gmail.com
+				&nbsp;&nbsp;</a>
+		</div>
+	</div>
+	<!-- Nav Start -->
+	<nav class="navbar navbar-expand-lg fixed-top py-0" style="background: var(--darkRed);" id="TopNavBar">
+		<div class="container-fluid fw-medium text-uppercase ">
+			<img src="pic/logo.png" alt="DIIT" title="DRISHTEE Computer center" id="logoImg">
+			<button class="navbar-toggler border border-white " data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="bi bi-list text-white "></span>
+			</button>
+			<div class="collapse navbar-collapse " id="navbarNav">
+				<ul class="navbar-nav m-auto text-center d-flex justify-content-evenly align-items-center w-100 
+		  text-danger ">
+					<li class=" nav-item ">
+						<a class=" nav-link active" aria-current="page" href="index.html">
+							<i class="fa fa-home"></i>
+							Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="top-blue" href="about.html">
+							<i class="fa fa-address-card"></i>
+							About</a>
+					</li>
+					<li class="nav-item dropdown my-dropdown-toggle  text-white" aria-expanded="false">
+						<a class="nav-link   dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false"> <i class="fa fa-book"></i> Course </a>
+						<ul class="dropdown-menu rounded rounded-0  " id="CourseListNav">
+							<table>
+								<tr>
+									<td><a class="dropdown-item px-2 " href="diploma.html">Computer Diploma</a> </td>
+								</tr>
+								<tr>
+									<td><a class="dropdown-item px-2 " href="language.html">Computer Language</a></td>
+								</tr>
+								<tr>
+									<td><a class="dropdown-item px-2 " href="graphicsDesign.html">Graphics Design</a>
+									</td>
+								</tr>
+								<tr>
+									<td><a class="dropdown-item px-2 " href="webDevlopment.html">Web Development</a>
+									</td>
+								</tr>
+								<tr>
+									<td><a class="dropdown-item px-2 " href="Repairing.html">Computer Repairing</a>
+									</td>
+								</tr>
+								<tr>
+									<td><a class="dropdown-item px-2 " href="govCource.html">NIELIT/DEEOACC Courses</a>
+									</td>
+								</tr>
+							</table>
+						</ul>
+					<li class="nav-item"> <a class="nav-link   " id="top-blue" href="branch.html"> <i
+								class="	fa fa-anchor"></i> Branch</a> </li>
+					</li>
+					<li class="nav-item dropdown text-white "> <a class="nav-link  dropdown-toggle " href="#"
+							role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i
+								class='fa fa-mortar-board d '></i> Student-zone
+						</a>
+						<ul class="dropdown-menu p-0 m-0" id="studentZoneNav">
+							<table>
+								<tr>
+									<td>
+										<a class="dropdown-item p-2 " href="admission.html">New
+											Admission</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a class="dropdown-item p-2 " href="verificaion.html">Verify
+											Your Certificate</a>
+									</td>
+								</tr>
+							</table>
+						</ul>
+					</li>
+					<li class="nav-item "> <a class="nav-link  " href="contact.html"> <i class="fa fa-phone"></i>
+							Contact</a> </li>
+				</ul>
+			</div>
+		</div>
+	</nav> <!--start Main Container -->
+	<div class="mainRegContainer" style="margin-top: 2.4rem;  ">
+		<div class="row d-flex mx-0 px-0 align-items-center justify-content-center ">
+			<div class="col-12 fw-bolder text-center pt-4 shadow-sm border-bottom "
+				style="color: maroon; background: var(--admHeadColor)" id="admReg">
+				<h3 class="fs-1  "> <b>CANDIDATE REGISTRATION FORM FOR NEW ADMISSION</b> </h3>
+				<p class="fs-5 body-text-secondary">
+					<marquee behavior="alternate" direction=""> ऑनलाइन पंजीकरण करने हेतु पंजीकरण फॉर्म </marquee>
+				</p> <a href="certificate.html" class="blink"><b> <img src="pic/icon/update.gif" width="30px"
+							alt="Updates"> अपनी प्रमाणपत्र की स्थिति जानने के लिए क्लिक करें </b></a>
+			</div>
+		</div>
+		<div class="row  d-flex align-items-center justify-content-center mx-0 px-0">
+			<div class="col-12  " style=" color: maroon; border-top: var(--my-border);">
+				<div class="row ">
+					<div class="col-12 py-2 text-center">
+						<h1 class="fw-bolder" style="color: maroon;" id="RegHead"> Registration form </h1>
+					</div>
+				</div>
+				<hr>
+				<form class="row g-3 needs-validation " id="formText">
+					<div class="col-md-4"> <label for="formFileSm" class="form-label">Upload your Photo <span
+								class="text-body-secondary"> / अपनी फ़ोटो अपलोड करें</span>
+							<font color="red"> * </font>
+						</label>
+						<div class="input-group mb-3"> <i class="bi bi-image input-group-text "></i> <input
+								class="form-control form-control-sm py-2 " id="formFileSm" type="file"> </div>
+					</div>
+					<div class="col-md-4"> <label for="validationCustom01" class="form-label">Name of Student <span
+								class="text-body-secondary"> / छात्र का नाम</span>
+							<font color="red"> * </font>
+						</label>
+						<div class="input-group mb-3"> <i class="bi bi-person-bounding-box input-group-text "></i>
+							<input type="text" class="form-control" onkeyup="OnlyLetters(this)"
+								placeholder=" छात्र का नाम दर्ज करें" aria-label="Username"
+								aria-describedby="basic-addon1"> </div>
+					</div>
+					<div class="col-md-4"> <label for="validationCustom02" class="form-label"> Father's Name <span
+								class="text-body-secondary">/ पिता का नाम</span>
+							<font color="red"> * </font>
+						</label>
+						<div class="input-group mb-3"> <i class="bi bi-person-fill input-group-text "></i> <input
+								type="text" class="form-control" onkeyup="OnlyLetters(this)"
+								placeholder=" पिता का नाम दर्ज करें" aria-label="Username"
+								aria-describedby="basic-addon1"> </div>
+					</div>
+					<div class="col-md-4"> <label for="validationCustom02" class="form-label"> Mother's Name <span
+								class="text-body-secondary">/ माता का नाम</span>
+							<font color="red"> * </font>
+						</label>
+						<div class="input-group mb-3"> <i class="bi bi-person-fill input-group-text "></i> <input
+								type="text" class="form-control" onkeyup="OnlyLetters(this)"
+								placeholder="माता का नाम  दर्ज करें" aria-label="Username"
+								aria-describedby="basic-addon1"> </div>
+					</div>
+					<div class="col-md-4 "> <label for="validationCustom03  " class="form-label  ">Gender <span
+								class="text-body-secondary"> / लिंग</span>
+							<font color="red"> * </font>
+						</label>
+						<div class="border d-flex align-items-center justify-content-evenly  h-50 bg-light"
+							style="border-radius: 10px;">
+							<div class="d-flex align-items-center "> <input
+									class="form-check-input  border border-secondary  " type="radio" name="gender"
+									id="flexRadio1">
+								<label class="form-check-label rounded rounded-pill " for="flexRadio1">
+									&nbsp;
+									Male
+									<span class="text-body-secondary rounded rounded-pill">
+										/
+										पुरुष
+									</span>
+								</label>
+							</div>
+							|
+							<div class="d-flex align-items-center">
+								<input class="form-check-input  border border-secondary " type="radio" name="gender"
+									id="flexRadio2">
+								<label class="form-check-label  " for="flexRadio2">
+									&nbsp;
+									Female
+									<span class="text-body-secondary">
+										/
+										महिला</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<label for="validationCustom03" class="form-label">Complete
+							Address
+							<span class="text-body-secondary">/
+								पूरा
+								पता</span>
+							<font color="red">
+								*
+							</font>
+						</label>
+						<div class="input-group mb-3">
+							<i class="bi bi-geo-alt-fill input-group-text "></i>
+							<input type="text" class="form-control" placeholder="पता दर्ज करें" aria-label="Username"
+								aria-describedby="basic-addon1">
+						</div>
+					</div>
+					<!-- <div class="col-md-4 col-xs-12">
+                        <div class="form-group">
+                            <label>State </label>
+                            <select class="form-control">
+                                <option selected="selected">Select</option>
+                                <option>Uttar Pradesh </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>District </label>
+                            <select class="form-control" id="inputDistrict">
+                                <option value="Agra">Agra</option>
+                                <option value="Aligarh">Aligarh</option>
+                                <option value="Allahabad">Allahabad</option>
+                                <option value="Ambedkar Nagar">Ambedkar Nagar</option>
+                                <option value="Amethi">Amethi</option>
+                                <option value="Amroha">Amroha</option>
+                                <option value="Auraiya">Auraiya</option>
+                                <option value="Azamgarh">Azamgarh</option>
+                                <option value="Baghpat">Baghpat</option>
+                                <option value="Bahraich">Bahraich</option>
+                                <option value="Ballia">Ballia</option>
+                                <option value="Balrampur">Balrampur</option>
+                                <option value="Banda">Banda</option>
+                                <option value="Barabanki">Barabanki</option>
+                                <option value="Bareilly">Bareilly</option>
+                                <option value="Basti">Basti</option>
+                                <option value="Bhadohi">Bhadohi</option>
+                                <option value="Bijnor">Bijnor</option>
+                                <option value="Budaun">Budaun</option>
+                                <option value="Bulandshahr">Bulandshahr</option>
+                                <option value="Chandauli">Chandauli</option>
+                                <option value="Chitrakoot">Chitrakoot</option>
+                                <option value="Deoria">Deoria</option>
+                                <option value="Etah">Etah</option>
+                                <option value="Etawah">Etawah</option>
+                                <option value="Faizabad">Faizabad</option>
+                                <option value="Farrukhabad">Farrukhabad</option>
+                                <option value="Fatehpur">Fatehpur</option>
+                                <option value="Firozabad">Firozabad</option>
+                                <option value="Gautam Buddha Nagar">Gautam Buddha Nagar</option>
+                                <option value="Ghaziabad">Ghaziabad</option>
+                                <option value="Ghazipur">Ghazipur</option>
+                                <option value="Gonda">Gonda</option>
+                                <option value="Gorakhpur">Gorakhpur</option>
+                                <option value="Hamirpur">Hamirpur</option>
+                                <option value="Hapur">Hapur</option>
+                                <option value="Hardoi">Hardoi</option>
+                                <option value="Hathras">Hathras</option>
+                                <option value="Jalaun">Jalaun</option>
+                                <option value="Jaunpur">Jaunpur</option>
+                                <option value="Jhansi">Jhansi</option>
+                                <option value="Kannauj">Kannauj</option>
+                                <option value="Kanpur Dehat">Kanpur Dehat</option>
+                                <option value="Kanpur Nagar">Kanpur Nagar</option>
+                                <option value="Kasganj">Kasganj</option>
+                                <option value="Kaushambi">Kaushambi</option>
+                                <option value="Kheri">Kheri</option>
+                                <option value="Kushinagar">Kushinagar</option>
+                                <option value="Lalitpur">Lalitpur</option>
+                                <option value="Lucknow">Lucknow</option>
+                                <option value="Maharajganj">Maharajganj</option>
+                                <option value="Mahoba">Mahoba</option>
+                                <option value="Mainpuri">Mainpuri</option>
+                                <option value="Mathura">Mathura</option>
+                                <option value="Mau">Mau</option>
+                                <option value="Meerut">Meerut</option>
+                                <option value="Mirzapur">Mirzapur</option>
+                                <option value="Moradabad">Moradabad</option>
+                                <option value="Muzaffarnagar">Muzaffarnagar</option>
+                                <option value="Pilibhit">Pilibhit</option>
+                                <option value="Pratapgarh">Pratapgarh</option>
+                                <option value="Raebareli">Raebareli</option>
+                                <option value="Rampur">Rampur</option>
+                                <option value="Saharanpur">Saharanpur</option>
+                                <option value="Sambhal">Sambhal</option>
+                                <option value="Sant Kabir Nagar">Sant Kabir Nagar</option>
+                                <option value="Shahjahanpur">Shahjahanpur</option>
+                                <option value="Shamli">Shamli</option>
+                                <option value="Shravasti">Shravasti</option>
+                                <option value="Siddharthnagar">Siddharthnagar</option>
+                                <option value="Sitapur">Sitapur</option>
+                                <option value="Sonbhadra">Sonbhadra</option>
+                                <option value="Sultanpur">Sultanpur</option>
+                                <option value="Unnao">Unnao</option>
+                                <option value="Varanasi">Varanasi</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Pincode</label>
+                            <input type="text" class="form-control" required="" data-toggle="tooltip"
+                                data-placement="right" title="" data-original-title="This field is required.">
+                        </div>
+                    </div> -->
+					<div class="col-md-4">
+						<label for="validationCustom03" class="form-label">E-mail
+							<span class="text-body-secondary">/
+								इमेल</span>
+						</label>
+						<div class="input-group mb-3">
+							<i class="bi bi-envelope-fill input-group-text "></i>
+							<input type="text" class="form-control" placeholder="ई. मेल आई.डी. दर्ज करें"
+								aria-label="Username" aria-describedby="basic-addon1">
+						</div>
+					</div>
+					<div class="col-md-4">
+						<label for="validationCustom03" class="form-label">Mobile
+							<span class="text-body-secondary">/
+								मोबाइल</span>
+							<font color="red">
+								*
+							</font>
+						</label>
+						<div class="input-group mb-3">
+							<i class="bi bi-telephone-fill input-group-text "></i>
+							<input type="password" class="form-control" onkeyup="contact(this)"
+								placeholder="मोबाइल नंबर दर्ज करें" aria-label="Username"
+								aria-describedby="basic-addon1">
+						</div>
+					</div>
+					<div class="col-md-4 "> <label for="validationCustom03" class="form-label">Date Of Birth ( DOB )
+							<span class="text-body-secondary"> / जन्म तिथि</span>
+							<font color="red"> * </font>
+						</label>
+						<div class="input-group mb-3"> <i class="bi bi-calendar-day-fill input-group-text "></i> <input
+								type="date" class="form-control" placeholder="जन्म तिथि दर्ज करें" aria-label="Username"
+								aria-describedby="basic-addon1"> </div>
+					</div>
+					<div class="col-md-4"> <label for="validationCustom04" class="form-label">Course
+							<span class="text-body-secondary">/
+								कोर्स</span>
+							<font color="red">
+								*
+							</font>
+						</label>
+						<div class="input-group mb-3">
+							<i class="bi bi-book-half input-group-text "></i>
+							<select class="form-select  bg-light " id="validationCustom04" required>
+								<option class="text-danger fw-bold" selected disabled>
+									---All
+									Course--- </option>
+								<option value="CCA"> CCA </option>
+								<option value="CAC"> CAC </option>
+								<option value="CCC"> CCC </option>
+								<option value="O 'LEVEL"> O 'LEVEL </option>
+								<option value="CHN"> CHN </option>
+								<option value="DDTP"> DDTP </option>
+								<option value="CDTP"> CDTP </option>
+								<option value="ADIT"> ADIT </option>
+								<option value="DIT"> DIT </option>
+								<option value="DCAD"> DCAD </option>
+								<option value="DBI"> DBI </option>
+								<option value="ADCA+"> ADCA+ </option>
+								<option value="ADCA"> ADCA </option>
+								<option value="DCA"> DCA </option>
+								<option value="DCAA"> DCAA </option>
+								<option value="PGDCA"> PGDCA </option>
+								<option value="TALLY"> TALLY </option>
+								<option value="HTML"> HTML </option>
+								<option value="CSS"> CSS </option>
+								<option value="Bootstrap"> Bootstrap </option>
+								<option value="JavaScript"> JavaScript </option>
+								<option value="Python"> Python </option>
+								<option value="JQuery"> JQuery </option>
+								<option value="C LANGUAGE"> C LANGUAGE </option>
+								<option value="C++"> C++ </option>
+							</select>
+							<div class="invalid-feedback"> Please select a valid state.
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4"> <label for="validationCustom05" class="form-label">Category <span
+								class="text-body-secondary">/ श्रेणी</span>
+							<font color="red"> * </font>
+						</label>
+						<div class="input-group mb-3"> <i class="bi bi-people-fill input-group-text  "></i>
+							<select class="form-select  bg-light " id="validationCustom05 rounded rounded-pill"
+								required>
+								<option value="0" class="text-danger"> --Select Category-- </option>
+								<option value="5"> GENERAL </option>
+								<option value="1"> OBC </option>
+								<option value="2"> SC </option>
+								<option value="3"> ST </option>
+							</select>
+						</div>
+					</div>
+					<div class="col-12  px-2 py-3 my-4" style="background: rgb(240, 173, 78); " id="declarationBg">
+						<div class="form-check">
+							<div class="bg-success-subtle p-2 rounded rounded-pill d-inline">
+								<label class="form-check-label h5 " for="invalidCheck">
+									<input type="checkbox" class="validCheck" onclick="checkMark()" required>
+									<span class="icon"> </span>
+									<span
+										style="font-size: 1.2rem !important; color: maroon !important;">Declaration</span>
+									<span class="text-body-secondary"> / घोषणा </span>
+								</label>
+							</div>
+							<p class="my-2" id="declarationTextOne"> i here by Declare that all the
+								information provided by me in this form is correct and best to my knowlede , i know that
+								my details can be used for the markting purpose by the institute . I further Declare
+								that i do not have any objection if i receive calls, E-mail and SMS for the advertising
+								purpose by the institute. </p>
+							<p id="declarationTextTwo"> <small>मैं यहां घोषणा करता हूं कि इस
+									फॉर्म में मेरे द्वारा प्रदान की गई सभी जानकारी सही है और मेरे ज्ञान के लिए सबसे
+									अच्छी है, मुझे पता है कि मेरे विवरण का उपयोग संस्थान द्वारा अंकन उद्देश्य के लिए
+									किया जा सकता है। मैं आगे कहता हूं कि अगर मुझे संस्थान द्वारा विज्ञापन उद्देश्य के
+									लिए कॉल, ई-मेल और एसएमएस प्राप्त होते हैं तो मुझे कोई आपत्ति नहीं है।</small> </p>
+						</div>
+						<div class="col-12 ms-2">
+							<button class="btn btn-primary ms-3 " id="checkBtn" type="submit" disabled>
+								Submit</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- social icons -->
+	<div class="social-icons">
+		<a class="nav-link  social-icons-one" href="#" data-aos="fade-right" data-aos-duration="200">
+			<small class="my-fb">Facebook</small>
+			<i class="bi bi-facebook px-1  " style="background: #3d5af8;"></i>
+		</a>
+		<a class="nav-link social-icons-two " href="#" data-aos="fade-right" data-aos-duration="400">
+			<small class="my-yt">Youtube</small>
+			<i class="bi bi-youtube px-1 " style="background: red;"></i>
+		</a>
+		<a class="nav-link  social-icons-three" href="https://wa.me/+919918151032" data-aos="fade-right"
+			data-aos-duration="600">
+			<small class="my-wp">Whatsapp</small>
+			<i class="bi bi-whatsapp px-1 " style="background: green;"></i>
+		</a>
+	</div>
+	<div class="row" id="courseMarqueeSlide">
+		<div class="col-12">
+			<div class="row bg-warning">
+				<div class="col-md-2 m-0 p-0 text-dark d-flex align-items-center justify-content-center fw-bold">
+					<div>
+						All
+						Updated
+						Course
+					</div>
+					<img src="pic/icon/newGif.gif" style="width:50px;" alt="">
+				</div>
+				<div class="col-md-10 text-white  fw-medium 
+        d-flex align-items-center justify-content-center text-uppercase" style="background: var(--cardHeadColor);">
+					<marquee> <small> adca+ </small> <small> dca </small> <small> dcaa </small> <small> dbi </small>
+						<small> 'o' level </small> <small> P.G. DCA </small> <small> cca </small> <small> cac </small>
+						<small> ccc </small> <small> chn </small> <small> ddtp </small> <small> dbi </small> <small> C
+							Language </small> <small> C++ </small> <small> Python (G.U.I.) </small> <small> Html 5
+						</small> <small> css 3 </small> <small> SASS</small> <small> SCSS </small> <small> Bootstrap
+						</small> <small> JavaScript </small> <small> Computer Repairing </small> <small> Microsoft
+							Office </small> <small> Internet( i. O. t. ) + cyber security with A.I. </small> <small>
+							TALLY WITH INVENTORY TAXATION WITH GST </small> <small> PHOTOSHOP </small> <small> PAGEMAKER
+						</small> <small> COREL-DRAW </small> <small>Etc...</small>
+					</marquee>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="text-white pt-3 text-lg-start border border-secondary-subtle" id="MyRegFooterColor"
+		style="background: var(--cardHeadColorDark); ">
+		<div class="container-fluid border-bottom ">
+			<div class="row ">
+			   <!--Grid column-->
+			   <div class="col-md-4 mb-4 mb-md-0 m-sm-0 p-0 ">
+				  <b data-aos="fade-down" class="ms-1 " style="color:orange !important;">
+					 <i class="fa fa-home text-white"></i>
+					 ADDRESS
+				  </b>
+				  <hr class="m-0 p-0">
+				  <table class="table mytable table-striped-columns mt-1">
+					 <tbody class="font-weight-normal">
+						<tr>
+						   <td data-aos="fade-right" data-aos-duration="100">
+							  <i class="bi bi-geo-alt-fill text-danger"></i><span id="address1">Paragpur raod Near Ramharsh
+								 Inter
+								 Collage Nichlaul.</span>
+						   </td>
+						</tr>
+						<tr>
+						   <td data-aos="fade-right" data-aos-duration="100">
+							  <i class="bi bi-geo-alt-fill text-danger"></i><span id="address2">Main market Road in front
+								 of
+								 Rauniyar
+								 chitra mandir Thoothibari.</span>
+						   </td>
+						</tr>
+						<tr>
+						   <td data-aos="fade-right" data-aos-duration="200">
+							  <img src="pic/icon/call1.gif" alt=""><span class="ms-1" title="Mr. Ajay Tiwari">+91
+								 9918151032</span>
+							  &nbsp;
+							  <img src="pic/icon/call1.gif" alt=""><span class="ms-1" title="Santosh Singh Chauhan">+91
+								 7398889347</span>
+						   </td>
+						</tr>
+						<tr>
+						   <td data-aos="fade-right" data-aos-duration="300">
+							  <img src="pic/icon/call1.gif" alt=""><span class="ms-1" title="Manjesh Vishwakarma">+91
+								 9621444858</span>
+							  &nbsp;
+							  <img src="pic/icon/call1.gif" alt=""><span class="ms-1" title="Hridesh Bharati">+91
+								 7267995307</span>
+						   </td>
+						</tr>
+					 </tbody>
+				  </table>
+			   </div>
+			   <div class="col-md-4 mb-4 mb-md-0 m-sm-0 ">
+				  <b data-aos="fade-down" style="color:orange !important;">
+					 <i class="fa fa-tags text-white">
+					 </i>
+					 QUICK
+					 LINKS
+				  </b>
+				  <hr class="m-0 p-0">
+				  <table class="table text-white table-striped-columns mt-1 footer-table">
+					 <tbody class="font-weight-normal">
+						<tr>
+						   <td> <a class="nav-link icon-link icon-link-hover" href="index.html" data-aos="fade-right"
+								 data-aos-duration="100"><i class="bi bi-arrow-right-short d-flex align-items-center"></i>
+								 Home</a>
+						   </td>
+						   <td> <a class="nav-link icon-link icon-link-hover" href="branch.html" data-aos="fade-right"
+								 data-aos-duration="100"><i class="bi bi-arrow-right-short d-flex align-items-center"></i>
+								 Branch</a>
+						   </td>
+						</tr>
+						<tr>
+						   <td> <a class="nav-link icon-link icon-link-hover" href="govCource.html"
+								 data-aos="fade-right" data-aos-duration="100"><i
+									class="bi bi-arrow-right-short d-flex align-items-center"></i> DOEACC Course</a> </td>
+						   <td> <a class="nav-link icon-link icon-link-hover" href="diploma.html" data-aos="fade-right"
+								 data-aos-duration="100"><i class="bi bi-arrow-right-short d-flex align-items-center"></i>
+								 Diploma Courses</a> </td>
+						</tr>
+						<tr>
+						   <td> <a class="nav-link icon-link icon-link-hover" href="verificaion.html" 
+								 data-aos="fade-right" data-aos-duration="100"><i
+									class="bi bi-arrow-right-short d-flex align-items-center"></i> Certificate Verification
+							  </a> </td>
+						   <td> <a class="nav-link icon-link icon-link-hover" href="admission.html" data-aos="fade-right"
+								 data-aos-duration="100"><i class="bi bi-arrow-right-short d-flex align-items-center"></i>
+								 New
+								 Admission</a> </td>
+						</tr>
+						<tr>
+						   <td> <a class="nav-link icon-link icon-link-hover" href="contact.html"
+								 data-aos="fade-right" data-aos-duration="100"><i
+									class="bi bi-arrow-right-short d-flex align-items-center"></i> Enquire </a> </td>
+						   <td> <a class="nav-link icon-link icon-link-hover" href="discription.html" data-aos="fade-right"
+								 data-aos-duration="100"><i class="bi bi-arrow-right-short d-flex align-items-center"></i>
+								 Term & Conditions </a> </td>
+						</tr>
+					 </tbody>
+				  </table>
+			   </div>
+			   <div class="col-md-4 mb-4 mb-md-0 " id="cssss">
+				  <b data-aos="fade-down" style="color:orange !important;"><i class="bi bi-newspaper text-white"></i>
+					 NEWS
+					 &
+					 UPDATES
+				  </b>
+				  <hr class="m-0 p-0">
+				  <table class="table text-white table-striped-columns mt-1 footer-table mytable">
+					 <tbody class="font-weight-normal">
+						<tr>
+						   <td data-aos="fade-right" data-aos-duration="300"> O level only 14999 Rs. </td>
+						   <td data-aos="fade-right" data-aos-duration="300"> CCC free on ADCA </td>
+						</tr>
+						<tr>
+						   <td data-aos="fade-right" data-aos-duration="300"> Assignments on every module. </td>
+						   <td data-aos="fade-right" data-aos-duration="300"> Projects based Class </td>
+						</tr>
+						<tr>
+						   <td data-aos="fade-right" data-aos-duration="300" class="d-flex justify-content-evenly">
+							  <a href="#" class="nav-link text-success border-primary ">
+								 <i class="bi bi-whatsapp fs-4 text-white px-2 py-1"
+									style="background: green; border-radius:5px;"></i>
+							  </a>
+							  <a href="#" class="nav-link text-success border-primary ">
+								 <i class="bi bi-youtube fs-4 text-white px-2 py-1"
+									style="background: red; border-radius:5px;"></i>
+							  </a>
+						   </td>
+						   <td data-aos="fade-right" data-aos-duration="300">
+							  <a href="#" class="nav-link text-success border-primary ">
+								 <i class="bi bi-facebook fs-4 text-white px-2 py-1"
+									style="background: #3d5af8;  border-radius:5px;"></i>
+							  </a>
+						   </td>
+						</tr>
+					 </tbody>
+				  </table>
+			   </div>
+			</div>
+		 </div>
+		<!-- Copyright Section -->
+		<div class="text-center p-3 " style="background-color: rgba(0, 0, 0, 0.2);" id="lastFooter"> &copy; 2024 DIIT
+			All
+			Rights Reserved | Developed By : <strong class="text-warning">DIIT</strong>
+			Student
+		</div>
+	</footer>
+	<!-- Back to top button -->
+	<button type="button" class="btn btn-primary yellow-btn btn-floating "
+		style="font-size: 1.5rem; border-radius: 8px !important;" id="btn-back-to-top">
+		<i class="bi bi-arrow-up-circle-fill"></i>
+	</button>
+	<!-- End Footer  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="main.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+</body>
+
+</html>
