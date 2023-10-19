@@ -38,7 +38,7 @@ body::-webkit-scrollbar {
     --computerBgCard: linear-gradient(0deg, #3a4792c2, #232d6b97), url("pic/thumbnails/book.png") center;
     --BooksBgCard: linear-gradient(0deg, #3a4792c2, #232d6b97), url("pic/thumbnails/pc.jpg") center;
     --EstablishmentBgCard: linear-gradient(0deg, #3a4792c2, #232d6b97), url("pic/contactBg.png") center;
-
+--hindiFont:font-family: 'Tiro Devanagari Hindi', serif;
 }
 
 #rightFeatureFinrst li {
