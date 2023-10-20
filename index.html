@@ -1,5 +1,5 @@
 <!doctype html>
-<html oncontextmenu="return false" onselect="return false">
+<html>
 
 <head>
    <meta charset="utf-8">
@@ -19,7 +19,7 @@
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 
-<body onload="listen()" style="background:var(--mainBgcolor);" oncontextmenu="return false;" id="MyBodyColor">
+<body onload="listen()" style="background:var(--mainBgcolor);"  oncontextmenu="return false" onselect="return false" id="MyBodyColor">
    <input type="text" id="TextToSpeech" class="hiddenVoice" value="Welcome to drishtee Computer center">
    <div class="d-flex align-items-center justify-content-between fixed-top"
       style="background: var(--topNavBgColor); width: 100vw !important; font-size: 0.7rem;" id="TopMarqueeNav">
@@ -936,7 +936,7 @@
                            <input type="email" id="email" name="email" class="form-control " placeholder="Enter Your E:mail" >
                         </div>
                      </div>
-                     <div class="col-md-12 position-relative ">
+                     <div class="col-md-12 position-relative">
                         <textarea class="form-control" name="message" id="message" rows="3"
                            placeholder="Type Your Message Here*"></textarea>
                      </div>
