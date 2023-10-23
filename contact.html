@@ -218,45 +218,46 @@
         </div>
     </div>
     <div class="col-md-12 my-3 h-100" data-aos="zoom-in" data-aos-duration="500">
-        <form class="row  m-1 myshadow " style="background:white;">
+            <form class="row p-0 border m-0 text-white"   
+                                 data-aos="fade-left" action="https://formspree.io/f/xyyqogrb" method="POST">
             <h3 class="p-2 m-0 text-white fw-bolder text-center text-uppercase"
                 style="background: var(--cardHeadColor);"> Contact Form </h3>
             <div class="col-md-6 position-relative my-3 ">
                 <label class="form-label fw-medium  ">First
                     Name <font color="orangered">*</font> </label>
-                <input type="text" class="form-control rounded rounded-0   p-2 bg-light" onkeyup="OnlyLetters(this)"
+                <input type="text" class="form-control rounded rounded-0 p-2 bg-light" name="fName" onkeyup="OnlyLetters(this)"
                     placeholder="First Name " required>
             </div>
             <div class="col-md-6  position-relative my-3 ">
                 <label class="form-label fw-medium">Last
                     Name <font color="orangered">*</font> </label>
-                <input type="text" class="form-control rounded rounded-0 p-2  bg-light" onkeyup="OnlyLetters(this)"
+                <input type="text" class="form-control rounded rounded-0 p-2  bg-light"  name="LName" onkeyup="OnlyLetters(this)"
                     placeholder="Last Name" required>
             </div>
             <div class="col-md-6 position-relative my-3 ">
                 <label class="form-label fw-medium ">Mobile
-                    Numbeer<font color="orangered">*</font> </label>
-                <input type="tel" class="form-control rounded rounded-0  p-2 bg-light " onkeyup="contact(this)"
+                    Number<font color="orangered">*</font> </label>
+                <input type="tel" class="form-control rounded rounded-0  p-2 bg-light"  name="contact" onkeyup="contact(this)"
                     placeholder="Enter Your Mobile " required>
             </div>
             <div class="col-md-6 position-relative my-3 ">
                 <label class="form-label fw-medium ">E:Mail <font color="orangered">*</font> </label>
-                <input type="email" class="form-control rounded rounded-0 p-2  bg-light "
+                <input type="email" class="form-control rounded rounded-0 p-2  bg-light" name="email"  
                     placeholder="Enter Your  E:mail " required>
             </div>
             <div class="col-md-12 position-relative my-3 ">
                 <label class="form-label fw-medium ">Subject<font color="orangered">*</font> </label>
-                <input type="email" class="form-control rounded rounded-0  p-2 bg-light "
+                <input type="email" name="subject" class="form-control rounded rounded-0  p-2 bg-light "
                     placeholder="Enter Your Subject's" required>
             </div>
             <div class="col-md-12 position-relative  ">
                 <label for="exampleFormControlTextarea1" class="form-label fw-medium">Message<font color="orangered">*
                     </font> </label>
-                <textarea class=" form-control rounded rounded-0 bg-light" id="exampleFormControlTextarea1" rows="7"
+                <textarea class=" form-control rounded rounded-0 bg-light" name="message" id="exampleFormControlTextarea1" rows="7"
                     placeholder="Type Your Message Here*"></textarea>
             </div>
             <div class="col-12 my-3 text-center">
-                <button class="btn btn-primary rounded rounded-10  fw-medium " id="playbutton" type="button">
+                <button class="btn btn-primary rounded rounded-10  fw-medium" name="submit" id="playbutton" type="button">
                     <i class="bi bi-send-fill "></i>
                     Submit</button>
             </div>
