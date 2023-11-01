@@ -966,10 +966,6 @@ document.onkeydown = function (e) {
         !1
     );
 };
-let showIngAlert = !1;
-const interval = setInterval(() => {
-    (document.title = showIngAlert ? "Drishtee institute of information Technology" : "Drishtee Computer Center"), (showIngAlert = !showIngAlert);
-}, 1e3);
 var swiper = new Swiper(".mySwiper", {
     effect: "coverflow",
     grabCursor: !0,
